@@ -14,7 +14,7 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
-    res.send("Hi I'am ServiceSS of Steakholder");
+    res.send("Serviceka");
 });
 
 ServiceRouter.route("/1").get((req, res) => {
