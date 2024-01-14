@@ -2085,6 +2085,7 @@ blockquote {
 
     nav#nav-main {
         display: none;
+        color: #f3f3ef;
     }
 
     nav#nav-mobile {
