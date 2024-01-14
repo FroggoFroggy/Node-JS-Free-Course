@@ -15,11 +15,11 @@ app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
     res.render("Serviceka",{
-        services : [
-            {serviceTitle:'ตบหน้า', serviceDescript: 'ตบด้วยความแรงสูง', servicePrice: '599'},
-            {serviceTitle:'โดดถีบ', serviceDescript: 'ถีบด้วยความแรงสูง', servicePrice: '699'},
-            {serviceTitle:'ตะโกนเรียก', serviceDescript: 'เรียกด้วยความแรงสูง', servicePrice: '799'},
-            {serviceTitle:'รัดคอ', serviceDescript: 'รัดด้วยความแรงสูง', servicePrice: '899'},
+        services: [
+            {serviceTitle:'ตบหน้า', serviceDescript: 'ตบด้วยความแรงสูง', servicePrice: 599 },
+            {serviceTitle:'โดดถีบ', serviceDescript: 'ถีบด้วยความแรงสูง', servicePrice: 699 },
+            {serviceTitle:'ตะโกนเรียก', serviceDescript: 'เรียกด้วยความแรงสูง', servicePrice: 799 },
+            {serviceTitle:'รัดคอ', serviceDescript: 'รัดด้วยความแรงสูง', servicePrice: 899 },
             
         ],
     });
