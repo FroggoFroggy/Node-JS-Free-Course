@@ -4,8 +4,8 @@
   "description": "learn Node JS by born to dev version",
   "main": "index.js",
   "scripts": {
-    "start":"set DEBUG=app & node app.js",
-    "debug":"set DEBUG=* & node app.js",
+    "start": "set DEBUG=app & nodemon app.js",
+    "debug": "set DEBUG=* & nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,7 +13,16 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "debug": "^4.3.4",
+    "ejs": "^3.1.9",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2000,
+    "env": {
+      "PORT": 3000
+    }
   }
 }
