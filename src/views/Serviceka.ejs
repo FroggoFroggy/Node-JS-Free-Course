@@ -162,13 +162,20 @@
         <div class="row clearfix">
 
             <div class="col-3">
-                <div class="section-heading">
-                    <h3>SUCCESS</h3>
-                    <h2>How We Help You To Sell Your Product</h2>
-                    <p> Bring service here</p>\
-                
-                </div>
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>SUCCESS</h3>
+                        <h2 class="section-title">How We Help You To Sell Your Product</h2>
+                        <p class="section-subtitle">
+                            Should Begin Here
+                            <% services.forEach((service) => { %>
+                                <%= service.serviceTitle %>
+                            <% }) %>
+                            End Here
+                        </p>
+                    </div>
 
+                </div>
 
 
             </div>
@@ -242,14 +249,6 @@
 
     </section>
     <!--End of Introduction-->
-
-    <div>
-        Should Begin Here
-        <% services.forEach((service) => { %>
-            <h2><%= service.serviceTitle %></h2>
-        <% }) %>
-        End Here
-    </div>
 
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
