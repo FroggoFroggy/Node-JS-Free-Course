@@ -15,13 +15,13 @@ app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
     res.send("Hi I'am ServiceSS of Steakholder");
-})
+});
 
 ServiceRouter.route("/1").get((req, res) => {
     res.send("Hi I'am ServiceSS 1 of Steakholder");
-})
+});
 
-app.use("/ServiceSS", ServiceRouter)
+app.use("/Serviceka", ServiceRouter)
 
 app.get("/", (req, res) => {
     res.render('index', { username: 'MatoomInw', customers: ["Dream", "Poon", "Em"] });
