@@ -14,11 +14,15 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
-    res.render("Serviceka");
-});
-
-ServiceRouter.route("/1").get((req, res) => {
-    res.send("Hi I'am ServiceSS 1 of Steakholder");
+    res.render("Serviceka",{
+        services : [
+            {serviceTitle:'ตบหน้า', serviceDescript: 'ตบด้วยความแรงสูง', servicePrice: '599'},
+            {serviceTitle:'โดดถีบ', serviceDescript: 'ถีบด้วยความแรงสูง', servicePrice: '699'},
+            {serviceTitle:'ตะโกนเรียก', serviceDescript: 'เรียกด้วยความแรงสูง', servicePrice: '799'},
+            {serviceTitle:'รัดคอ', serviceDescript: 'รัดด้วยความแรงสูง', servicePrice: '899'},
+            
+        ],
+    });
 });
 
 app.use("/Serviceka", ServiceRouter)
