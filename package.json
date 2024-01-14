@@ -4,6 +4,8 @@
   "description": "learn Node JS by born to dev version",
   "main": "index.js",
   "scripts": {
+    "start":"set DEBUG=app & node app.js",
+    "debug":"set DEBUG=* & node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
