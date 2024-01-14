@@ -243,13 +243,13 @@
     </section>
     <!--End of Introduction-->
 
-   <div>
-    Should Begin Here
-     <% services.map((service)=>{ %>
-      <h2><%=services.serviceTitle %></h2>
-     <%})%>
-     End Here
-   </div>
+    <div>
+        Should Begin Here
+        <% services.forEach((service) => { %>
+            <h2><%= service.serviceTitle %></h2>
+        <% }) %>
+        End Here
+    </div>
 
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
