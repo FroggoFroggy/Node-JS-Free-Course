@@ -168,9 +168,10 @@
                         <h2 class="section-title">How We Help You To Sell Your Product</h2>
                         <p class="section-subtitle">
                             Should Begin Here
-                           
+                            <%- services.forEach((service) => { %><%= service.serviceTitle %><%- }) %>
                             End Here
                         </p>
+                        
                     </div>
 
                 </div>
