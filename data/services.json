@@ -1,29 +1,34 @@
 {
     "services": [
-      {
-        "serviceTitle": "ตบหน้า",
-        "serviceDescript": "ตบด้วยความแรงสูง",
-        "servicePrice": 599
-      },
-      {
-        "serviceTitle": "โดดถีบ",
-        "serviceDescript": "ถีบด้วยความแรงสูง",
-        "servicePrice": 699
-      },
-      {
-        "serviceTitle": "ตะโกนเรียก",
-        "serviceDescript": "เรียกด้วยความแรงสูง",
-        "servicePrice": 799
-      },
-      {
-        "serviceTitle": "รัดคอ",
-        "serviceDescript": "รัดด้วยความแรงสูง",
-        "servicePrice": 899
-      },
-      {
-        "serviceTitle": "กล่องเก็บมือถือ",
-        "serviceDescript": "กล่องเหล็กสีดำ ล๊อคแบบจับเวลาใส่มือถือเข้าไปได้",
-        "servicePrice": 999
-      }
+        {
+            "id": 0,
+            "serviceTitle": "ตบหน้า",
+            "serviceDescript": "ตบด้วยความแรงสูง",
+            "servicePrice": 599
+        },
+        {
+            "id": 1,
+            "serviceTitle": "โดดถีบ",
+            "serviceDescript": "ถีบด้วยความแรงสูง",
+            "servicePrice": 699
+        },
+        {
+            "id": 2,
+            "serviceTitle": "ตะโกนเรียก",
+            "serviceDescript": "เรียกด้วยความแรงสูง",
+            "servicePrice": 799
+        },
+        {
+            "id": 3,
+            "serviceTitle": "รัดคอ",
+            "serviceDescript": "รัดด้วยความแรงสูง",
+            "servicePrice": 899
+        },
+        {
+            "id": 4,
+            "serviceTitle": "กล่องเก็บมือถือ",
+            "serviceDescript": "กล่องเหล็กสีดำ ล๊อคแบบจับเวลาใส่มือถือเข้าไปได้",
+            "servicePrice": 999
+        }
     ]
-  }
+}
