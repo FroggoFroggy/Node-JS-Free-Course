@@ -15,12 +15,12 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
-    res.render("Serviceka",
+    res.render("products",
         services,
     );
 });
 
-app.use("/Serviceka", ServiceRouter)
+app.use("/products", ServiceRouter)
 
 app.get("/", (req, res) => {
     res.render('index', { username: 'MatoomInw', customers: ["Dream", "Poon", "Em"] });
