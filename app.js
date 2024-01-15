@@ -15,9 +15,9 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
-    res.render("Serviceka",{
+    res.render("Serviceka",
         services,
-    });
+    );
 });
 
 app.use("/Serviceka", ServiceRouter)
