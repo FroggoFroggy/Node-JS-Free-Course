@@ -19,6 +19,11 @@
         "serviceTitle": "รัดคอ",
         "serviceDescript": "รัดด้วยความแรงสูง",
         "servicePrice": 899
+      },
+      {
+        "serviceTitle": "กล่องเก็บมือถือ",
+        "serviceDescript": "กล่องเหล็กสีดำ ล๊อคแบบจับเวลาใส่มือถือเข้าไปได้",
+        "servicePrice": 999
       }
     ]
   }
