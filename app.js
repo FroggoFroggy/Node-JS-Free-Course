@@ -16,7 +16,7 @@ app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
     res.render("products",
-        services,
+            services,
     );
 });
 
