@@ -24,7 +24,7 @@ ServiceRouter.route("/").get((req, res) => {
 ServiceRouter.route("/:id").get((req, res) => {
     const id = req.params.id;
     res.render("product",{
-        product: products[id],
+        product: services[id],
     })
 });
 
