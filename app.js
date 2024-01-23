@@ -22,7 +22,7 @@ ServiceRouter.route("/").get((req, res) => {
 
 ServiceRouter.route("/:id").get((req, res) => {
     const id = req.params.id;
-    res.render("Hello this world is Product and Service "+id);
+    res.send("Hello this world is Product and Service "+id);
 });
 
 app.use("/products", ServiceRouter)
