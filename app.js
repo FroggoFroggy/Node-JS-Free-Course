@@ -16,8 +16,13 @@ app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
     res.render("products",
-        services,
+    services
     );
+});
+
+ServiceRouter.route("/:id").get((req, res) => {
+    const id = req.params.id;
+    res.render("Hello this world is Product and Service "+id);
 });
 
 app.use("/products", ServiceRouter)
