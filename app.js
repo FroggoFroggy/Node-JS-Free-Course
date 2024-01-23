@@ -15,14 +15,17 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs")
 
 ServiceRouter.route("/").get((req, res) => {
-    res.render("products",
+    res.render("products",{
             services,
+    }
     );
 });
 
 ServiceRouter.route("/:id").get((req, res) => {
     const id = req.params.id;
-    res.send("Hello this world is Product and Service "+id);
+    res.render("product",{
+        product: products[id],
+    })
 });
 
 app.use("/products", ServiceRouter)
