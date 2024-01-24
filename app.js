@@ -5,30 +5,34 @@ const debug = require('debug')('app');
 const path = require('path')
 const app = express();
 const PORT = process.env.PORT;
+const ServicesRouter = express.Router();
 const services = require("./data/services.json");
-const ServiceRouter = express.Router();
 
 app.use(morgan('combined'));
-app.use(express.static(path.join(__dirname, "/public/"))) //ถ้าตรงนี้ไม่ทำงาน จะเด้งไปแสดงผลที่ app.get("/",(req,res))
+app.use(express.static(path.join(__dirname, "/public/"))); //ถ้าตรงนี้ไม่ทำงาน จะเด้งไปแสดงผลที่ app.get("/",(req,res))
 
 app.set("views", "./src/views");
 app.set("view engine", "ejs")
 
-ServiceRouter.route("/").get((req, res) => {
+app.use("/products", productsRouter)
+
+ServicesRouter.route("/").get((req, res) => {
+    debugger;
     res.render("products",{
             services,
     }
     );
 });
 
-ServiceRouter.route("/:id").get((req, res) => {
+ServicesRouter.route("/:id").get((req, res) => {
+    debugger;
     const id = req.params.id;
     res.render("product",{
         product: services[id],
     })
 });
 
-app.use("/products", ServiceRouter)
+module.exports = ServicesRouter;
 
 app.get("/", (req, res) => {
     res.render('index', { username: 'MatoomInw', customers: ["Dream", "Poon", "Em"] });
